@@ -1,17 +1,19 @@
 # -*- coding: utf-8 -*-
 """
 Created on Tue Sep  8 13:37:40 2020
-
 @author: Duo Motbal
 """
 import math
 
+"""
+Manque Exercice 4
+Penser à un format de présentation pour la DocString et les fonctions
+Faire la distinction entre chaque exercice
+"""
 
 """
 Les deux prochaines fonctions sont un calcul d'imc il suffit de rentrer un int correspondant
 à votre imc afin de pouvoir vous dire dans qu'elle catégorie vous vous situés
-
-
 Dans la version 1 vous trouverez les palier en dure alors que dans la version 2
 un code bien plus propre avec des Constantes afin de rendre le code plus évolutif
 """
@@ -74,7 +76,7 @@ def testImc():
 
 def bissextile(annee:int)->bool:
     #Une année divisible par quatre est bissextile
-    if annee % 4 == 0:
+    if annee % 4 == 0: """Manque de condition ne doit pas être divisible par 100)"""
         return True
     else:
         return False
@@ -111,7 +113,7 @@ def racine_double(a:float, b:float, delta:float, num:float):
 
 def str_equation(a:float,b:float,c:float)->str:
     equation=str(a)+"x2"+str(b)+"x"+str(c)+"=0"
-    return equation
+    return equation  """peux return directement et ne prend pas en compte les nombres négatifs """
 
 def solution_equation(a,b,c):  
     delta=discriminant(a,b,c)
