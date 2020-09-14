@@ -1,13 +1,12 @@
 def bissextile(annee:int):
     #Test pour savoir si l'année est bissextile
-    if annee % 4 == 0:
+    if annee % 4 == 0 and not annee % 100 == 0:
         res = True
     #si elle n'est pas bissextile
     else:
         res = False 
     #renvoi de la solution
     return res
-
 
 def date_est_valide(jour:int,mois:int,annee:int):
     #Test pour savoir si c'est un mois en 30 ou 31
